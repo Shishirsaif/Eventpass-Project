@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8d0a2aa6d4.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Ticket</title>
+<body>
+    <header>
+        <div class="socials_container">
+            <div class="socials_wrapper">
+               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               <ul>
+                    <a href="#"><li>English</li></a>
+                    <a href="#"><li>My Page</li></a>
+               </ul>
+            </div>
+        </div>
+        <nav class="nav_bar">
+          <div class="humburger_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+          </div> 
+          <a href="Index.html" class="logo"><h2>EventPass</h2></a>
+          <ul class="mobile-menu-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="ticket.html">Ticket</a></li>
+          </ul>
+          <a href="ticket.html"><button type="submit" class="button">Ticket</button></a>
+          <ul class="nav-link">
+            <li><a class="nav-link-line" href="about.html">About</a></li>
+            <li><a class="nav-link-line" href="events.html">Events</a></li>
+            <li><a class="nav-link-line" href="ticket.html">Ticket</a></li>
+          </ul>
+        </nav>
+    </header>
+<body>
+  <header>
+    <h1>🎫Ticket</h1>
+    <p>Get last-minute discounted tickets to your favorite concerts, shows, and events!</p>
+  </header>
+
+ 
+  <div class="container">
+    <div class="event-card">
+      <div class="event-title">Rock the Night – Dhaka Arena</div>
+      <div class="event-details">
+        <div class="price">৳999 <del>৳1500</del></div>
+        <button class="buy-button" onclick="showQR('qr1')">Buy Ticket</button>
+      </div>
+      <div id="qr1" class="qr-section hidden">
+        <p>Scan QR to Pay:</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=pay-rock-night" alt="QR Code">
+        <a href="https://api.qrserver.com/v1/create-qr-code/?data=pay-rock-night&download=1" class="download-link" download>Download QR</a>
+        <div class="form-container">
+            <h2>🎟️ Purchase Ticket</h2>
+            <form action="#" method="post">
+              <label for="event">Select Event</label>
+              <select id="event" name="event" required>
+                <option value="">-- Choose an Event --</option>
+                <option value="rock-night">Rock the Night – Dhaka</option>
+                <option value="comedy-carnival">Comedy Carnival – Chattogram</option>
+                <option value="jazz-fusion">Jazz Fusion – Sylhet</option>
+              </select>
+        
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+        
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        
+              <label for="quantity">Number of Tickets</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+        
+              <label for="payment">Payment Method</label>
+              <select id="payment" name="payment" required>
+                <option value="">-- Choose Payment Method --</option>
+                <option value="bkash">bKash</option>
+                <option value="nagad">Nagad</option>
+                <option value="rocket">Rocket</option>
+                <option value="card">Credit/Debit Card</option>
+              </select>
+        
+              <button type="submit" class="submit-btn">Confirm & Pay</button>
+            </form>
+          </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="event-card">
+          <div class="event-title">Comedy Carnival – Chattogram</div>
+          <div class="event-details">
+            <div class="price">৳649 <del>৳1100</del></div>
+            <button class="buy-button" onclick="showQR('qr1')">Buy Ticket</button>
+          </div>
+          <div id="qr1" class="qr-section hidden">
+            <p>Scan QR to Pay:</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=pay-rock-night" alt="QR Code">
+            <a href="https://api.qrserver.com/v1/create-qr-code/?data=pay-rock-night&download=1" class="download-link" download>Download QR</a>
+            <div class="form-container">
+                <h2>🎟️ Purchase Ticket</h2>
+                <form action="#" method="post">
+                  <label for="event">Select Event</label>
+                  <select id="event" name="event" required>
+                    <option value="">-- Choose an Event --</option>
+                    <option value="rock-night">Rock the Night – Dhaka</option>
+                    <option value="comedy-carnival">Comedy Carnival – Chattogram</option>
+                    <option value="jazz-fusion">Jazz Fusion – Sylhet</option>
+                  </select>
+            
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your full name" required>
+            
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            
+                  <label for="quantity">Number of Tickets</label>
+                  <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+            
+                  <label for="payment">Payment Method</label>
+                  <select id="payment" name="payment" required>
+                    <option value="">-- Choose Payment Method --</option>
+                    <option value="bkash">bKash</option>
+                    <option value="nagad">Nagad</option>
+                    <option value="rocket">Rocket</option>
+                    <option value="card">Credit/Debit Card</option>
+                  </select>
+            
+                 <button type="submit" class="submit-btn">Confirm & Pay</button>
+            </form>
+            </div>
+    </div>
+    </div>
+    <div class="event-card">
+      <div class="event-title">Jazz-Fusion – Sylhet</div>
+      <div class="event-details">
+        <div class="price">৳850 <del>৳1199</del></div>
+        <button class="buy-button" onclick="showQR('qr2')">Buy Ticket</button>
+      </div>
+      <div id="qr2" class="qr-section hidden">
+        <p>Scan QR to Pay:</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=pay-comedy-carnival" alt="QR Code">
+        <a href="https://api.qrserver.com/v1/create-qr-code/?data=pay-comedy-carnival&download=1" class="download-link" download>Download QR</a>
+        <div class="form-container">
+            <h2>🎟️ Purchase Ticket</h2>
+            <form action="#" method="post">
+              <label for="event">Select Event</label>
+              <select id="event" name="event" required>
+                <option value="">-- Choose an Event --</option>
+                <option value="rock-night">Rock the Night – Dhaka</option>
+                <option value="comedy-carnival">Comedy Carnival – Chattogram</option>
+                <option value="jazz-fusion">Jazz Fusion – Sylhet</option>
+              </select>
+        
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+        
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        
+              <label for="quantity">Number of Tickets</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+        
+              <label for="payment">Payment Method</label>
+              <select id="payment" name="payment" required>
+                <option value="">-- Choose Payment Method --</option>
+                <option value="bkash">bKash</option>
+                <option value="nagad">Nagad</option>
+                <option value="rocket">Rocket</option>
+                <option value="card">Credit/Debit Card</option>
+              </select>
+        
+              <button type="submit" class="submit-btn">Confirm & Pay</button>
+            </form>
+          </div>
+    </div>
+    </div>
+  </div>
+
+  <section class="footer">
+    <div class="footer-container">
+        <div class="head-footer">
+            <h2>Partners</h2>
+            <div class="line-partner"></div>
+        </div>
+        <div class="partner-logo">
+            <a href="#"><img src="images/oraimo.png" alt="oraimo"></a>
+            <a href=""><img src="images/youthbangla.png" alt="youthbangla"></a>
+            <a href=""><img src="images/DT.png" alt="DhakaTribune"></a>
+        </div>
+    </div>
+    <div class="lower-footer">
+        <p>@ 2025 Eventpass</p>
+    </div>
+</section>
+<script src="script.js"></script>
+  <script>
+    function showQR(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
